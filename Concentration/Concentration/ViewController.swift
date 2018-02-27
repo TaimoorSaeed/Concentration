@@ -13,6 +13,10 @@ class ViewController: UIViewController {
     // MARK: LABELS
     @IBOutlet weak var flipCountLabel: UILabel!
     
+    @IBOutlet var cardButton: [UIButton]!
+    
+    var emojiChoices = ["👻","🎃","👻","🎃"]
+    
     var flipCount = 0 {
         didSet {
             flipCountLabel.text = "Flip Counts \(flipCount)"
@@ -22,12 +26,14 @@ class ViewController: UIViewController {
     @IBAction func touchCard(_ sender: UIButton) {
         flipCount += 1
         
-        flipCard(withEmoji: "👻", on: sender)
+        if let cardNumber = cardButton.index(of: sender) {
+            flipCard(withEmoji: emojiChoices[cardNumber], on: sender)
+        }
+        else {
+            print("card is not available")
+        }
     }
-    @IBAction func touchSecondCard(_ sender: UIButton) {
-        flipCount += 1
-        flipCard(withEmoji: "🎃", on: sender)
-    }
+    
     func flipCard(withEmoji emoji: String, on button: UIButton){
         
         if button.currentTitle == emoji {

@@ -18,39 +18,87 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sz-uj-Yef">
-                                <rect key="frame" x="66" y="147" width="80" height="125"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sz-uj-Yef">
+                                <rect key="frame" x="93" y="147" width="80" height="125"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="OWA-dQ-eYV"/>
+                                    <constraint firstAttribute="height" constant="125" id="ocP-Br-JiZ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <state key="normal" title="👻"/>
                                 <connections>
-                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C8i-rQ-uX9"/>
+                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hx3-FL-n8M"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qgu-xn-LiE">
-                                <rect key="frame" x="178" y="147" width="80" height="125"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qgu-xn-LiE">
+                                <rect key="frame" x="228" y="147" width="80" height="125"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="HoS-tX-56b"/>
+                                    <constraint firstAttribute="height" constant="125" id="QT6-XZ-qoK"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <state key="normal" title="🎃"/>
                                 <connections>
-                                    <action selector="touchSecondCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wy4-sO-bNK"/>
+                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dM8-XS-g1R"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Flips : 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFO-ui-NxM">
-                                <rect key="frame" x="0.0" y="565" width="375" height="102"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blG-0x-sCm">
+                                <rect key="frame" x="228" y="322" width="80" height="125"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="WlS-xx-j98"/>
+                                    <constraint firstAttribute="width" constant="80" id="hA3-ZY-rYz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" title="🎃"/>
+                                <connections>
+                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b6q-8U-ReL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Qf-Rr-Ei9">
+                                <rect key="frame" x="93" y="322" width="80" height="125"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="kPh-hc-28i"/>
+                                    <constraint firstAttribute="height" constant="125" id="qlX-7k-9Tj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" title="🎃"/>
+                                <connections>
+                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Dc-h0-8Oc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flips : 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFO-ui-NxM">
+                                <rect key="frame" x="0.0" y="570" width="375" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="8sz-uj-Yef" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="93" id="14n-yX-Pcp"/>
+                            <constraint firstItem="fFO-ui-NxM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7dX-IV-tac"/>
+                            <constraint firstItem="3Qf-Rr-Ei9" firstAttribute="top" secondItem="8sz-uj-Yef" secondAttribute="bottom" constant="50" id="F3P-fg-s7j"/>
+                            <constraint firstItem="fFO-ui-NxM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="RK1-rG-DM6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fFO-ui-NxM" secondAttribute="bottom" constant="49" id="Y3l-ap-JgK"/>
+                            <constraint firstItem="blG-0x-sCm" firstAttribute="top" secondItem="Qgu-xn-LiE" secondAttribute="bottom" constant="50" id="Ywr-36-9Qf"/>
+                            <constraint firstItem="Qgu-xn-LiE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="127" id="m2d-Fh-YsD"/>
+                            <constraint firstItem="3Qf-Rr-Ei9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="93" id="n5J-ts-p5S"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qgu-xn-LiE" secondAttribute="trailing" constant="67" id="nBa-cL-tDL"/>
+                            <constraint firstItem="8sz-uj-Yef" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="127" id="rEo-lv-nQF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="blG-0x-sCm" secondAttribute="trailing" constant="67" id="xdd-Nd-OSa"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="flipCountLabel" destination="fFO-ui-NxM" id="npt-iM-rie"/>
+                        <outletCollection property="cardButton" destination="8sz-uj-Yef" collectionClass="NSMutableArray" id="38L-0P-jIB"/>
+                        <outletCollection property="cardButton" destination="Qgu-xn-LiE" collectionClass="NSMutableArray" id="fOZ-ur-fm4"/>
+                        <outletCollection property="cardButton" destination="3Qf-Rr-Ei9" collectionClass="NSMutableArray" id="NHF-AJ-iCw"/>
+                        <outletCollection property="cardButton" destination="blG-0x-sCm" collectionClass="NSMutableArray" id="9GJ-sn-KTn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
